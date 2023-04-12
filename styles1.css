@@ -37,14 +37,42 @@ h1 sub:after{
     content:")"
 }
 
-img {
-    border-radius:10px;
-}
+
 
 .hero{
-    outline:1px solid red;
-    height:100vh;
-    display:flex;
+    outline: 1px solid red;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
+}
+
+.hero img{
+    width:100%;
     justify-content: center; 
+}
+
+.headshot {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 1s box-shadow 1s;
+    background-size: contain;
+}
+.headshot:hover{
+    transform:rotate(360deg);
+    box-shadow: 0px 0px 100px 50px #fc0,
+                0px 0px 100px 20px #960 inset;
+    background-image: url("https://www.smogon.com/dex/media/sprites/xy/cramorant-gorging.gif");
+
+}
+.headshot img{
+    transition: opacity .2s;
+}
+
+.headshot:hover img {
+    opacity: 0;
+    
 }
