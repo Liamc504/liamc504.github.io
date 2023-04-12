@@ -30,3 +30,11 @@ h1{
 img {
     border-radius:10px;
 }
+
+.hero{
+    outline:1px solid red;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+}
