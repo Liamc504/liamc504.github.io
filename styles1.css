@@ -36,6 +36,17 @@ h1 sub:before{
 h1 sub:after{
     content:")"
 }
+h2{
+    font-size:24px;
+    line-height:40px;
+    font-weight:bold;
+}
+a{
+    color:#58b;
+}
+a:hover{
+    color:#369;
+}
 
 section{
     border-top:2px dashed #eee;
