@@ -23,6 +23,7 @@ html, body {
 }
 body{
     text-align:center;
+    overflow-x: hidden; /* cus the spinning hero makes horizontal scroll bar go crazy*/
 }
 
 h1{
@@ -54,7 +55,7 @@ a:hover{
 
 section{
     border-top:2px dashed #eee;
-    padding:50px 0; /* 50 top&bott pad, 0 left&right pad */
+    padding:50px 10px; /* 50 top&bott pad, 0 left&right pad */
     max-width:800px;
     margin:0 auto;  
 }
@@ -78,6 +79,7 @@ address{
 
 .hero{
     outline: 1px solid red;
+    min-height:550px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -149,6 +151,14 @@ address{
     text-align:right;
     border-right: 0;
 }
+@media (max-width: 500px) {
+    .blocklist > li{
+        display:block;
+        text-align:center !important; /*dont use important recklessly?.*/
+        border-width:0;
+        margin:50px 0;
+        }
+}
 
 .prose{
     text-align:justify;
@@ -167,6 +177,7 @@ address{
     width:100%;
     display:flex;
     position:fixed;
+    z-index:9999;
 }
 .nav li{
     list-style-type:none;
