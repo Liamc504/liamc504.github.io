@@ -194,3 +194,19 @@ address{
 .nav li a:hover{
     background-color:#fa0;
 }
+
+a.teal_cutedge1, a.teal_cutedge1d {
+    display: flex;
+    background-color: transparent;
+    background-image: url(buttons/teal2.gif);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: auto;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Courier New', 'Lucida Console', Courier, Monaco, Monospace, monospace;
+    line-height: 13px !important;
+}
